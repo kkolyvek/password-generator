@@ -87,8 +87,10 @@ function copyPassword() {
   // copies the generated password to the clipboard
   var copyPass = document.getElementById("password");
 
+  // select text, copy it, deselect it
   copyPass.select();
   document.execCommand("copy");
+  window.getSelection().removeAllRanges();
 }
 
 // Add event listener to generate button
