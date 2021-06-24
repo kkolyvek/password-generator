@@ -52,6 +52,49 @@ header {
 
 .card-body {
   min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#password {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #c0c7cf;
+  border-radius: 6px 6px 0 0;
+  resize: none;
+  overflow: hidden;
+}
+
+#password:focus {
+  border: 1px solid #c0c7cf;
+}
+
+#copy-to-clip {
+  background: none;
+  border: 1px solid #c0c7cf;
+  border-radius: 0 0 6px 6px;
+  border-top: none;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+#copy-to-clip:hover {
+  cursor: pointer;
+  background: #f9fbfd;
 }
 
 .card-footer {
@@ -88,35 +131,18 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  color: hsl(0, 0%, 90%);
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
-.float-right {
+/* .float-right {
   float: right;
-}
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-}
+} */
 
 @media (max-width: 690px) {
   .btn {
